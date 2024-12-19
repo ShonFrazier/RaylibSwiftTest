@@ -6,10 +6,11 @@
 //
 
 import AppKit
+import Raylib
 
 
-let RAYWHITE = Color(r: 245, g: 245, b: 245, a: 255)
-let BLACK = Color(r: 0, g: 0, b: 0, a: 0)
+let RAYWHITE = Raylib.Color(r: 245, g: 245, b: 245, a: 255)
+let BLACK = Raylib.Color(r: 0, g: 0, b: 0, a: 0)
 
 @main
 struct MyApp {

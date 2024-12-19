@@ -14,8 +14,8 @@
             filePath = "Yokta Beginnings/RaylibViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "Yokta Beginnings/RaylibViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "gameLoop()"
             landmarkType = "7">
             <Locations>
@@ -63,6 +63,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
                   endingLineNumber = "27"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  uuid = "F2D2A6E5-7BA8-4CEC-BD54-A05C6A442D8B - 36077c2b21d097dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yokta_Beginnings.RaylibViewController.gameLoop() -&gt; ()"
+                  moduleName = "Yokta Beginnings"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Yokta%20Beginnings/RaylibViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
                   offsetFromSymbolStart = "47">
                </Location>
             </Locations>
@@ -141,8 +156,8 @@
             filePath = "Yokta Beginnings/RaylibViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "gameLoop()"
             landmarkType = "7">
             <Locations>
@@ -176,6 +191,21 @@
                   endingLineNumber = "26"
                   offsetFromSymbolStart = "31">
                </Location>
+               <Location
+                  uuid = "80444F10-F7A6-4296-B8A3-53B12DC05C20 - 36077c2b21d097bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Yokta_Beginnings.RaylibViewController.gameLoop() -&gt; ()"
+                  moduleName = "Yokta Beginnings"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Yokta%20Beginnings/RaylibViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "31">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -189,8 +219,8 @@
             filePath = "Yokta Beginnings/RaylibViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -284,6 +314,21 @@
                   endingLineNumber = "21"
                   offsetFromSymbolStart = "22">
                </Location>
+               <Location
+                  uuid = "179F6AC5-9B0A-483A-BDA8-F15104B3F52F - cd9edbe4323eb008"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in Yokta_Beginnings.RaylibViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Yokta Beginnings"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Yokta%20Beginnings/RaylibViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "22">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -297,8 +342,8 @@
             filePath = "Yokta Beginnings/RaylibViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -329,8 +374,8 @@
             filePath = "Yokta Beginnings/Main.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "main()"
             landmarkType = "7">
          </BreakpointContent>

@@ -7,6 +7,7 @@
 
 import Cocoa
 import Foundation
+import Raylib
 
 class RaylibViewController: NSViewController {
   override func viewDidLoad() {
