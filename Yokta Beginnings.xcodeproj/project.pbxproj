@@ -7,19 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CD9099B2D13C18000821D03 /* libraylib.5.5.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9099A2D13C18000821D03 /* libraylib.5.5.0.dylib */; };
 		4CDB4B602D1313F80067CA58 /* Yokta_BeginningsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB4B5F2D1313F80067CA58 /* Yokta_BeginningsApp.swift */; };
 		4CDB4B622D1313F80067CA58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB4B612D1313F80067CA58 /* ContentView.swift */; };
 		4CDB4B642D1313FC0067CA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4B632D1313FC0067CA58 /* Assets.xcassets */; };
 		4CDB4B672D1313FC0067CA58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4B662D1313FC0067CA58 /* Preview Assets.xcassets */; };
+		4CDB4B732D1316BB0067CA58 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B722D1316BB0067CA58 /* OpenGL.framework */; };
+		4CDB4B752D1316C50067CA58 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B742D1316C50067CA58 /* Cocoa.framework */; };
+		4CDB4B772D1316CD0067CA58 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B762D1316CD0067CA58 /* IOKit.framework */; };
+		4CDB4B792D1316DE0067CA58 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B782D1316DE0067CA58 /* CoreVideo.framework */; };
+		4CDB4B7B2D1316F80067CA58 /* libSystem.B.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B7A2D1316F80067CA58 /* libSystem.B.tbd */; };
+		4CDB4B7D2D1317030067CA58 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B7C2D1317030067CA58 /* AppKit.framework */; };
+		4CDB4B7F2D13170D0067CA58 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B7E2D13170D0067CA58 /* CoreFoundation.framework */; };
+		4CDB4B822D13171C0067CA58 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B802D13171C0067CA58 /* CoreServices.framework */; };
+		4CDB4B832D13171C0067CA58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B812D13171C0067CA58 /* CoreGraphics.framework */; };
+		4CDB4B852D1317270067CA58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B842D1317270067CA58 /* Foundation.framework */; };
+		4CDB4B872D1317360067CA58 /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B862D1317350067CA58 /* libobjc.A.tbd */; };
+		4CDB4B8A2D1318960067CA58 /* RaylibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB4B892D1318960067CA58 /* RaylibViewController.swift */; };
+		4CDB4B8C2D1386BF0067CA58 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB4B8B2D1386BF0067CA58 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CD9099A2D13C18000821D03 /* libraylib.5.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libraylib.5.5.0.dylib; path = "../raylib-5.5_macos/lib/libraylib.5.5.0.dylib"; sourceTree = "<group>"; };
 		4CDB4B5C2D1313F80067CA58 /* Yokta Beginnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yokta Beginnings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDB4B5F2D1313F80067CA58 /* Yokta_BeginningsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yokta_BeginningsApp.swift; sourceTree = "<group>"; };
 		4CDB4B612D1313F80067CA58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CDB4B632D1313FC0067CA58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CDB4B662D1313FC0067CA58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CDB4B682D1313FC0067CA58 /* Yokta_Beginnings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yokta_Beginnings.entitlements; sourceTree = "<group>"; };
+		4CDB4B722D1316BB0067CA58 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4CDB4B742D1316C50067CA58 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4CDB4B762D1316CD0067CA58 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		4CDB4B782D1316DE0067CA58 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		4CDB4B7A2D1316F80067CA58 /* libSystem.B.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.B.tbd; path = usr/lib/libSystem.B.tbd; sourceTree = SDKROOT; };
+		4CDB4B7C2D1317030067CA58 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4CDB4B7E2D13170D0067CA58 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4CDB4B802D13171C0067CA58 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		4CDB4B812D13171C0067CA58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CDB4B842D1317270067CA58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CDB4B862D1317350067CA58 /* libobjc.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.A.tbd; path = usr/lib/libobjc.A.tbd; sourceTree = SDKROOT; };
+		4CDB4B892D1318960067CA58 /* RaylibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaylibViewController.swift; sourceTree = "<group>"; };
+		4CDB4B8B2D1386BF0067CA58 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		4CDB4B8D2D13951C0067CA58 /* raylib.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = raylib.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +56,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD9099B2D13C18000821D03 /* libraylib.5.5.0.dylib in Frameworks */,
+				4CDB4B872D1317360067CA58 /* libobjc.A.tbd in Frameworks */,
+				4CDB4B852D1317270067CA58 /* Foundation.framework in Frameworks */,
+				4CDB4B822D13171C0067CA58 /* CoreServices.framework in Frameworks */,
+				4CDB4B832D13171C0067CA58 /* CoreGraphics.framework in Frameworks */,
+				4CDB4B7F2D13170D0067CA58 /* CoreFoundation.framework in Frameworks */,
+				4CDB4B7D2D1317030067CA58 /* AppKit.framework in Frameworks */,
+				4CDB4B7B2D1316F80067CA58 /* libSystem.B.tbd in Frameworks */,
+				4CDB4B792D1316DE0067CA58 /* CoreVideo.framework in Frameworks */,
+				4CDB4B772D1316CD0067CA58 /* IOKit.framework in Frameworks */,
+				4CDB4B752D1316C50067CA58 /* Cocoa.framework in Frameworks */,
+				4CDB4B732D1316BB0067CA58 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +77,10 @@
 		4CDB4B532D1313F80067CA58 = {
 			isa = PBXGroup;
 			children = (
+				4CDB4B702D13154F0067CA58 /* Modules */,
 				4CDB4B5E2D1313F80067CA58 /* Yokta Beginnings */,
 				4CDB4B5D2D1313F80067CA58 /* Products */,
+				4CDB4B712D1316BB0067CA58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +100,8 @@
 				4CDB4B632D1313FC0067CA58 /* Assets.xcassets */,
 				4CDB4B682D1313FC0067CA58 /* Yokta_Beginnings.entitlements */,
 				4CDB4B652D1313FC0067CA58 /* Preview Content */,
+				4CDB4B892D1318960067CA58 /* RaylibViewController.swift */,
+				4CDB4B8B2D1386BF0067CA58 /* Main.swift */,
 			);
 			path = "Yokta Beginnings";
 			sourceTree = "<group>";
@@ -67,6 +112,33 @@
 				4CDB4B662D1313FC0067CA58 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CDB4B702D13154F0067CA58 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4CDB4B8D2D13951C0067CA58 /* raylib.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4CDB4B712D1316BB0067CA58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CD9099A2D13C18000821D03 /* libraylib.5.5.0.dylib */,
+				4CDB4B862D1317350067CA58 /* libobjc.A.tbd */,
+				4CDB4B842D1317270067CA58 /* Foundation.framework */,
+				4CDB4B812D13171C0067CA58 /* CoreGraphics.framework */,
+				4CDB4B802D13171C0067CA58 /* CoreServices.framework */,
+				4CDB4B7E2D13170D0067CA58 /* CoreFoundation.framework */,
+				4CDB4B7C2D1317030067CA58 /* AppKit.framework */,
+				4CDB4B7A2D1316F80067CA58 /* libSystem.B.tbd */,
+				4CDB4B782D1316DE0067CA58 /* CoreVideo.framework */,
+				4CDB4B762D1316CD0067CA58 /* IOKit.framework */,
+				4CDB4B742D1316C50067CA58 /* Cocoa.framework */,
+				4CDB4B722D1316BB0067CA58 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +213,8 @@
 			files = (
 				4CDB4B622D1313F80067CA58 /* ContentView.swift in Sources */,
 				4CDB4B602D1313F80067CA58 /* Yokta_BeginningsApp.swift in Sources */,
+				4CDB4B8C2D1386BF0067CA58 /* Main.swift in Sources */,
+				4CDB4B8A2D1318960067CA58 /* RaylibViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,17 +348,33 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Yokta Beginnings/Preview Content\"";
 				DEVELOPMENT_TEAM = 46EG8VPZ4C;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../raylib-5.5_macos/include",
+					"$(PROJECT_DIR)/Modules",
+				);
+				INFOPLIST_KEY_CFBundleDisplayName = "Beginnings - Yokta";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../raylib-5.5_macos/lib",
+				);
 				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "$(PROJECT_DIR)/Libraries/raylib.modulemap";
+				OTHER_CFLAGS = "-fmodule-map-debug";
+				OTHER_SWIFT_FLAGS = "\"-DRAY\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.shon.Yokta-Beginnings";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -301,17 +391,33 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Yokta Beginnings/Preview Content\"";
 				DEVELOPMENT_TEAM = 46EG8VPZ4C;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../raylib-5.5_macos/include",
+					"$(PROJECT_DIR)/Modules",
+				);
+				INFOPLIST_KEY_CFBundleDisplayName = "Beginnings - Yokta";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../raylib-5.5_macos/lib",
+				);
 				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "$(PROJECT_DIR)/Libraries/raylib.modulemap";
+				OTHER_CFLAGS = "-fmodule-map-debug";
+				OTHER_SWIFT_FLAGS = "\"-DRAY\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.shon.Yokta-Beginnings";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

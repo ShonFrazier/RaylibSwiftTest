@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+//@main
 struct Yokta_BeginningsApp: App {
     var body: some Scene {
         WindowGroup {

@@ -1,0 +1,12 @@
+//
+//  raylib.modulemap
+//  Yokta Beginnings
+//
+//  Created by Shon on 12/18/24.
+//
+
+module Raylib {
+    umbrella header "raylib.h"
+
+    export *
+}
