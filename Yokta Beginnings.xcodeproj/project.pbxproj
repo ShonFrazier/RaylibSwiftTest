@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3C8B102D1467C80044B5F6 /* raylib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B0F2D1467C80044B5F6 /* raylib.swift */; };
+		4C3C8B122D147F120044B5F6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B112D147F120044B5F6 /* Game.swift */; };
+		4C3C8B142D1487B00044B5F6 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B132D1487B00044B5F6 /* Stage.swift */; };
+		4C3C8B172D1489AB0044B5F6 /* LoadingStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B162D1489AB0044B5F6 /* LoadingStage.swift */; };
+		4C3C8B192D14B1760044B5F6 /* ClearStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B182D14B1760044B5F6 /* ClearStage.swift */; };
+		4C3C8B1B2D14D0150044B5F6 /* ClearDissolveStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */; };
 		4CD9099F2D14609000821D03 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9099E2D14609000821D03 /* libraylib.a */; };
-		4CDB4B602D1313F80067CA58 /* Yokta_BeginningsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB4B5F2D1313F80067CA58 /* Yokta_BeginningsApp.swift */; };
-		4CDB4B622D1313F80067CA58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB4B612D1313F80067CA58 /* ContentView.swift */; };
 		4CDB4B642D1313FC0067CA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4B632D1313FC0067CA58 /* Assets.xcassets */; };
 		4CDB4B672D1313FC0067CA58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4B662D1313FC0067CA58 /* Preview Assets.xcassets */; };
 		4CDB4B732D1316BB0067CA58 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B722D1316BB0067CA58 /* OpenGL.framework */; };
@@ -23,18 +27,21 @@
 		4CDB4B832D13171C0067CA58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B812D13171C0067CA58 /* CoreGraphics.framework */; };
 		4CDB4B852D1317270067CA58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B842D1317270067CA58 /* Foundation.framework */; };
 		4CDB4B872D1317360067CA58 /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB4B862D1317350067CA58 /* libobjc.A.tbd */; };
-		4CDB4B8A2D1318960067CA58 /* RaylibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB4B892D1318960067CA58 /* RaylibViewController.swift */; };
 		4CDB4B8C2D1386BF0067CA58 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB4B8B2D1386BF0067CA58 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C3C8B0F2D1467C80044B5F6 /* raylib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raylib.swift; sourceTree = "<group>"; };
+		4C3C8B112D147F120044B5F6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		4C3C8B132D1487B00044B5F6 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		4C3C8B162D1489AB0044B5F6 /* LoadingStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStage.swift; sourceTree = "<group>"; };
+		4C3C8B182D14B1760044B5F6 /* ClearStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearStage.swift; sourceTree = "<group>"; };
+		4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearDissolveStage.swift; sourceTree = "<group>"; };
 		4CD9099A2D13C18000821D03 /* libraylib.5.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libraylib.5.5.0.dylib; path = "../raylib-5.5_macos/lib/libraylib.5.5.0.dylib"; sourceTree = "<group>"; };
 		4CD9099C2D145FB900821D03 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		4CD9099D2D145FCE00821D03 /* raylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = raylib.h; sourceTree = "<group>"; };
 		4CD9099E2D14609000821D03 /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = "../raylib-5.5_macos/lib/libraylib.a"; sourceTree = "<group>"; };
 		4CDB4B5C2D1313F80067CA58 /* Yokta Beginnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yokta Beginnings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CDB4B5F2D1313F80067CA58 /* Yokta_BeginningsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yokta_BeginningsApp.swift; sourceTree = "<group>"; };
-		4CDB4B612D1313F80067CA58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CDB4B632D1313FC0067CA58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CDB4B662D1313FC0067CA58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CDB4B682D1313FC0067CA58 /* Yokta_Beginnings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yokta_Beginnings.entitlements; sourceTree = "<group>"; };
@@ -49,7 +56,6 @@
 		4CDB4B812D13171C0067CA58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4CDB4B842D1317270067CA58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4CDB4B862D1317350067CA58 /* libobjc.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.A.tbd; path = usr/lib/libobjc.A.tbd; sourceTree = SDKROOT; };
-		4CDB4B892D1318960067CA58 /* RaylibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaylibViewController.swift; sourceTree = "<group>"; };
 		4CDB4B8B2D1386BF0067CA58 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,11 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C3C8B152D1489660044B5F6 /* Stages */ = {
+			isa = PBXGroup;
+			children = (
+				4C3C8B132D1487B00044B5F6 /* Stage.swift */,
+				4C3C8B162D1489AB0044B5F6 /* LoadingStage.swift */,
+				4C3C8B182D14B1760044B5F6 /* ClearStage.swift */,
+				4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */,
+			);
+			path = Stages;
+			sourceTree = "<group>";
+		};
 		4CDB4B532D1313F80067CA58 = {
 			isa = PBXGroup;
 			children = (
-				4CDB4B702D13154F0067CA58 /* Modules */,
 				4CDB4B5E2D1313F80067CA58 /* Yokta Beginnings */,
+				4CDB4B702D13154F0067CA58 /* Modules */,
+				4C3C8B152D1489660044B5F6 /* Stages */,
 				4CDB4B5D2D1313F80067CA58 /* Products */,
 				4CDB4B712D1316BB0067CA58 /* Frameworks */,
 			);
@@ -97,13 +115,11 @@
 		4CDB4B5E2D1313F80067CA58 /* Yokta Beginnings */ = {
 			isa = PBXGroup;
 			children = (
-				4CDB4B5F2D1313F80067CA58 /* Yokta_BeginningsApp.swift */,
-				4CDB4B612D1313F80067CA58 /* ContentView.swift */,
 				4CDB4B632D1313FC0067CA58 /* Assets.xcassets */,
 				4CDB4B682D1313FC0067CA58 /* Yokta_Beginnings.entitlements */,
 				4CDB4B652D1313FC0067CA58 /* Preview Content */,
-				4CDB4B892D1318960067CA58 /* RaylibViewController.swift */,
 				4CDB4B8B2D1386BF0067CA58 /* Main.swift */,
+				4C3C8B112D147F120044B5F6 /* Game.swift */,
 			);
 			path = "Yokta Beginnings";
 			sourceTree = "<group>";
@@ -121,6 +137,7 @@
 			children = (
 				4CD9099D2D145FCE00821D03 /* raylib.h */,
 				4CD9099C2D145FB900821D03 /* module.modulemap */,
+				4C3C8B0F2D1467C80044B5F6 /* raylib.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -215,10 +232,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CDB4B622D1313F80067CA58 /* ContentView.swift in Sources */,
-				4CDB4B602D1313F80067CA58 /* Yokta_BeginningsApp.swift in Sources */,
+				4C3C8B122D147F120044B5F6 /* Game.swift in Sources */,
+				4C3C8B102D1467C80044B5F6 /* raylib.swift in Sources */,
+				4C3C8B1B2D14D0150044B5F6 /* ClearDissolveStage.swift in Sources */,
+				4C3C8B172D1489AB0044B5F6 /* LoadingStage.swift in Sources */,
+				4C3C8B142D1487B00044B5F6 /* Stage.swift in Sources */,
 				4CDB4B8C2D1386BF0067CA58 /* Main.swift in Sources */,
-				4CDB4B8A2D1318960067CA58 /* RaylibViewController.swift in Sources */,
+				4C3C8B192D14B1760044B5F6 /* ClearStage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +380,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Modules";
-				INFOPLIST_KEY_CFBundleDisplayName = "Beginnings - Yokta";
+				INFOPLIST_KEY_CFBundleDisplayName = Beginnings;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -369,8 +389,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/../raylib-5.5_macos/lib",
+					"$(PROJECT_DIR)/Modules",
 				);
 				MARKETING_VERSION = 1.0;
 				MODULEMAP_FILE = "$(SRCROOT)/Libraries/raylib.modulemap";
@@ -400,7 +419,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Modules";
-				INFOPLIST_KEY_CFBundleDisplayName = "Beginnings - Yokta";
+				INFOPLIST_KEY_CFBundleDisplayName = Beginnings;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -409,8 +428,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/../raylib-5.5_macos/lib",
+					"$(PROJECT_DIR)/Modules",
 				);
 				MARKETING_VERSION = 1.0;
 				MODULEMAP_FILE = "$(SRCROOT)/Libraries/raylib.modulemap";
