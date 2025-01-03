@@ -13,6 +13,9 @@
 		4C3C8B172D1489AB0044B5F6 /* LoadingStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B162D1489AB0044B5F6 /* LoadingStage.swift */; };
 		4C3C8B192D14B1760044B5F6 /* ClearStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B182D14B1760044B5F6 /* ClearStage.swift */; };
 		4C3C8B1B2D14D0150044B5F6 /* ClearDissolveStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */; };
+		4C3FF87C2D18DED400AB8425 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3FF87B2D18DED300AB8425 /* Friend.swift */; };
+		4C8A3A362D234F85008ECC8E /* SnekStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A352D234F85008ECC8E /* SnekStage.swift */; };
+		4C8A3A392D2356DD008ECC8E /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A382D2356DD008ECC8E /* Position.swift */; };
 		4CD9099F2D14609000821D03 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9099E2D14609000821D03 /* libraylib.a */; };
 		4CDB4B642D1313FC0067CA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4B632D1313FC0067CA58 /* Assets.xcassets */; };
 		4CDB4B672D1313FC0067CA58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4B662D1313FC0067CA58 /* Preview Assets.xcassets */; };
@@ -37,6 +40,9 @@
 		4C3C8B162D1489AB0044B5F6 /* LoadingStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStage.swift; sourceTree = "<group>"; };
 		4C3C8B182D14B1760044B5F6 /* ClearStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearStage.swift; sourceTree = "<group>"; };
 		4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearDissolveStage.swift; sourceTree = "<group>"; };
+		4C3FF87B2D18DED300AB8425 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		4C8A3A352D234F85008ECC8E /* SnekStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnekStage.swift; sourceTree = "<group>"; };
+		4C8A3A382D2356DD008ECC8E /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		4CD9099A2D13C18000821D03 /* libraylib.5.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libraylib.5.5.0.dylib; path = "../raylib-5.5_macos/lib/libraylib.5.5.0.dylib"; sourceTree = "<group>"; };
 		4CD9099C2D145FB900821D03 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		4CD9099D2D145FCE00821D03 /* raylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = raylib.h; sourceTree = "<group>"; };
@@ -89,16 +95,35 @@
 				4C3C8B162D1489AB0044B5F6 /* LoadingStage.swift */,
 				4C3C8B182D14B1760044B5F6 /* ClearStage.swift */,
 				4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */,
+				4C8A3A352D234F85008ECC8E /* SnekStage.swift */,
 			);
 			path = Stages;
+			sourceTree = "<group>";
+		};
+		4C3FF87A2D18DE7E00AB8425 /* Friend */ = {
+			isa = PBXGroup;
+			children = (
+				4C3FF87B2D18DED300AB8425 /* Friend.swift */,
+			);
+			path = Friend;
+			sourceTree = "<group>";
+		};
+		4C8A3A372D2356BB008ECC8E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4C8A3A382D2356DD008ECC8E /* Position.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		4CDB4B532D1313F80067CA58 = {
 			isa = PBXGroup;
 			children = (
+				4C3FF87A2D18DE7E00AB8425 /* Friend */,
 				4CDB4B5E2D1313F80067CA58 /* Yokta Beginnings */,
 				4CDB4B702D13154F0067CA58 /* Modules */,
 				4C3C8B152D1489660044B5F6 /* Stages */,
+				4C8A3A372D2356BB008ECC8E /* Utility */,
 				4CDB4B5D2D1313F80067CA58 /* Products */,
 				4CDB4B712D1316BB0067CA58 /* Frameworks */,
 			);
@@ -239,6 +264,9 @@
 				4C3C8B142D1487B00044B5F6 /* Stage.swift in Sources */,
 				4CDB4B8C2D1386BF0067CA58 /* Main.swift in Sources */,
 				4C3C8B192D14B1760044B5F6 /* ClearStage.swift in Sources */,
+				4C3FF87C2D18DED400AB8425 /* Friend.swift in Sources */,
+				4C8A3A392D2356DD008ECC8E /* Position.swift in Sources */,
+				4C8A3A362D234F85008ECC8E /* SnekStage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +402,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Yokta Beginnings/Preview Content\"";
-				DEVELOPMENT_TEAM = 46EG8VPZ4C;
+				DEVELOPMENT_TEAM = Z5HCG2KB82;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
@@ -413,7 +441,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Yokta Beginnings/Preview Content\"";
-				DEVELOPMENT_TEAM = 46EG8VPZ4C;
+				DEVELOPMENT_TEAM = Z5HCG2KB82;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;

@@ -34,53 +34,6 @@
             endingLineNumber = "27"
             landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "4964B051-31C4-4183-84CB-7AAE9F791170 - 36f654b336051016"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Yokta_Beginnings.ContentView.body.getter : some"
-                  moduleName = "Yokta Beginnings"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Yokta%20Beginnings/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "151">
-               </Location>
-               <Location
-                  uuid = "4964B051-31C4-4183-84CB-7AAE9F791170 - adc31791abb0edc1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Text)&gt; in Yokta_Beginnings.ContentView.body.getter : some"
-                  moduleName = "Yokta Beginnings"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Yokta%20Beginnings/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "313">
-               </Location>
-               <Location
-                  uuid = "4964B051-31C4-4183-84CB-7AAE9F791170 - 36f654b33605130e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Yokta_Beginnings.ContentView.body.getter : some"
-                  moduleName = "Yokta Beginnings"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Yokta%20Beginnings/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "62">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -126,8 +79,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
-                  endingLineNumber = "25"
-                  offsetFromSymbolStart = "211">
+                  endingLineNumber = "25">
                </Location>
                <Location
                   uuid = "179F6AC5-9B0A-483A-BDA8-F15104B3F52F - 484338188af4805b"
@@ -141,8 +93,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "41">
+                  endingLineNumber = "26">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -174,8 +125,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "22">
+                  endingLineNumber = "22">
                </Location>
                <Location
                   uuid = "DD4DACE8-E2FF-42CC-B01D-2D8B94946491 - 3bfa9041c567b2fc"
@@ -189,8 +139,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "159">
+                  endingLineNumber = "22">
                </Location>
                <Location
                   uuid = "DD4DACE8-E2FF-42CC-B01D-2D8B94946491 - 3bfa9041c567b2fc"
@@ -204,8 +153,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "147">
+                  endingLineNumber = "22">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -269,8 +217,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "159">
+                  endingLineNumber = "14">
                </Location>
                <Location
                   uuid = "08E563FC-F8A9-4C6B-9E99-E0E6B0C86007 - 2fe606477a894843"
@@ -284,8 +231,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "56">
+                  endingLineNumber = "14">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -317,8 +263,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "725">
+                  endingLineNumber = "18">
                </Location>
                <Location
                   uuid = "65B6D1A7-B3C6-4140-BCAD-28D631763EAC - 84d98d6a13a25643"
@@ -332,8 +277,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "99">
+                  endingLineNumber = "18">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -380,8 +324,8 @@
             filePath = "Yokta Beginnings/Game.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "step()"
             landmarkType = "7">
          </BreakpointContent>
@@ -438,7 +382,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6DE01E37-EA6B-4540-BA6D-F9B3AA08C7BB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Stages/LoadingStage.swift"
@@ -448,101 +392,6 @@
             endingLineNumber = "80"
             landmarkName = "willPrepare()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6DE01E37-EA6B-4540-BA6D-F9B3AA08C7BB - ac733231641bbe07"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Yokta_Beginnings.LoadingStage.willPrepare() -&gt; ()"
-                  moduleName = "Yokta Beginnings"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Stages/LoadingStage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "6DE01E37-EA6B-4540-BA6D-F9B3AA08C7BB - ac733231641bbe07"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Yokta_Beginnings.LoadingStage.willPrepare() -&gt; ()"
-                  moduleName = "Yokta Beginnings"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Stages/LoadingStage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "37">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "292A1B4C-4F6F-4080-BF43-D08CE776F4E7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Stages/LoadingStage.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "nextString()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "292A1B4C-4F6F-4080-BF43-D08CE776F4E7 - 356974e24994814d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Yokta_Beginnings.LoadingStage.nextString() -&gt; ()"
-                  moduleName = "Yokta Beginnings"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Stages/LoadingStage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "104"
-                  endingLineNumber = "104"
-                  offsetFromSymbolStart = "561">
-               </Location>
-               <Location
-                  uuid = "292A1B4C-4F6F-4080-BF43-D08CE776F4E7 - 356974e24994816e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Yokta_Beginnings.LoadingStage.nextString() -&gt; ()"
-                  moduleName = "Yokta Beginnings"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Stages/LoadingStage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "728">
-               </Location>
-               <Location
-                  uuid = "292A1B4C-4F6F-4080-BF43-D08CE776F4E7 - 356974e2499481d0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Yokta_Beginnings.LoadingStage.nextString() -&gt; ()"
-                  moduleName = "Yokta Beginnings"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shon/Projects/Yokta%20Beginnings/Stages/LoadingStage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "107"
-                  endingLineNumber = "107"
-                  offsetFromSymbolStart = "760">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

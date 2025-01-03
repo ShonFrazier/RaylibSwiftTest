@@ -37,10 +37,11 @@ public class Game {
     }
     
     stages = [
+      SnekStage(),
       LoadingStage(),
       ClearDissolveStage(start: BLACK, end: RED, length: 0.75),
       ClearDissolveStage(start: RED, end: BLUE, length: 0.5),
-      ClearStage(color: BLUE),
+      //ClearStage(color: BLUE),
     ]
     InitWindow(self.size.width, self.size.height, "Raylib Swift macOS Example")
     
