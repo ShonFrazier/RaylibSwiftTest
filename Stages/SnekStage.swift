@@ -12,6 +12,14 @@ extension Rectangle {
   var center: Position {
     Position(x: self.x + self.width / 2.0, y: self.y + self.height / 2.0)
   }
+  
+  func contains(_ p: Position) -> Bool {
+    return
+      p.x >= self.x &&
+      p.y >= self.y &&
+      p.x <= self.x + self.width &&
+      p.y <= self.y + self.height
+  }
 }
 
 let DEFAULT_SNEK_LENGTH: UInt = 2
@@ -24,7 +32,12 @@ class SnekStage : Stage {
   let gridSize: Size
   let cellSize: Size // screen units (pixels, points, wtfe)
   
-  let snek: Snek
+  let gridRectangle: Rectangle
+  
+  var snek: Snek
+  
+  var stepTime: Float = 0.25
+  var accumulatedFrameTime: Float = 0
 
   let fullGridSize: Size
 
@@ -39,18 +52,18 @@ class SnekStage : Stage {
     )
 
     // Get the center of the entire grid
-    let r: Rectangle = Rectangle(x: 0, y: 0, width: Float(gridSize.width), height: Float(gridSize.height))
-    let center = r.center
+    self.gridRectangle = Rectangle(x: 0, y: 0, width: Float(gridSize.width), height: Float(gridSize.height))
+    let center = self.gridRectangle.center
 
     let range: Range<Int> = 0..<Int(DEFAULT_SNEK_LENGTH)
-    let body = range.map { e in
-      let i = Float(Int(e)) * 1.0
-      return SnekCell(count: DEFAULT_SNEK_LENGTH, position: center + (i * Position.east))
+    let body = range.map { i in
+      let f = Float(i)
+      return SnekCell(count: DEFAULT_SNEK_LENGTH, position: center + (f * Position.east))
     }
 
     self.snek = Snek(body: body, direction: .random())
   }
-
+  
   override func willDraw() {
     BeginDrawing()
     defer { EndDrawing() }
@@ -59,14 +72,34 @@ class SnekStage : Stage {
     
     let hMargin = (GetScreenWidth() - fullGridSize.width) / 2
     let vMargin = (GetScreenHeight() - fullGridSize.height) / 2
+    
+    self.accumulatedFrameTime += GetFrameTime()
+    let timeToStep = self.accumulatedFrameTime >= stepTime
 
+    if timeToStep {
+      if let snek = snek.move() {
+        if let head = snek.head {
+          if self.gridRectangle.contains(head) {
+            self.snek = snek
+          } else {
+            self.die()
+          }
+        }
+      } else {
+        print("Error moving snek")
+      }
+      self.accumulatedFrameTime = 0
+    }
 
-
-    snek.body.forEach({ cell in
+    self.snek.body.forEach({ cell in
       let x = cell.position.x * Float(cellSize.width) + Float(hMargin)
       let y = cell.position.y * Float(cellSize.height) + Float(vMargin)
       DrawRectangle(Int32(x), Int32(y), cellSize.width, cellSize.height, RED)
     })
+  }
+  
+  func die() {
+    print("ded x.x")
   }
 }
 
@@ -113,13 +146,13 @@ enum Direction : RawRepresentable, CaseIterable {
 
 extension UInt {
   func decremented(_ clamping: Range<Self> = Range(uncheckedBounds: (lower: UInt.min, upper: UInt.max))) -> Self {
-    return self == clamping.min()
-      ? clamping.min()!
+    return self == clamping.lowerBound
+      ? clamping.lowerBound
       : self - 1
   }
   func incremented(_ clamping: Range<Self> = Range(uncheckedBounds: (lower: UInt.min, upper: UInt.max))) -> Self {
-    return self == clamping.max()
-      ? clamping.max()!
+    return self == clamping.upperBound
+      ? clamping.upperBound
       : self + 1
   }
 }
@@ -148,6 +181,10 @@ struct Snek {
   let body: [SnekCell]
   let direction: Direction
   let score: UInt
+  
+  var head: Position? {
+    body.first?.position
+  }
 
   init(body: [SnekCell] = [], direction: Direction, score: UInt = 2) {
     self.body = body
@@ -162,7 +199,7 @@ struct Snek {
     let newHead = currentHead.next(going: direction)
 
     let updatedBody = body.map { $0.decremented }
-    let trimmedBody = body.filter { $0.count > 0 }
+    let trimmedBody = updatedBody.filter { $0.count > 0 }
 
     let newBody = [newHead] + trimmedBody
 
@@ -171,5 +208,9 @@ struct Snek {
 
   func with(direction: Direction) -> Snek {
     return Snek(body: body, direction: direction, score: score)
+  }
+  
+  func die() {
+    
   }
 }
