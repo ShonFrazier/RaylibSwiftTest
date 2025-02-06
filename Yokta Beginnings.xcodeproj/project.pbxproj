@@ -15,7 +15,7 @@
 		4C3C8B1B2D14D0150044B5F6 /* ClearDissolveStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */; };
 		4C3FF87C2D18DED400AB8425 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3FF87B2D18DED300AB8425 /* Friend.swift */; };
 		4C7DBAB92D554407009E2899 /* clay.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DBAB82D554402009E2899 /* clay.c */; };
-		4C7DBABF2D5552A6009E2899 /* clay_renderer_raylib.h in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.h */; };
+		4C7DBABF2D5552A6009E2899 /* clay_renderer_raylib.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.c */; };
 		4C8A3A362D234F85008ECC8E /* SnekStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A352D234F85008ECC8E /* SnekStage.swift */; };
 		4C8A3A392D2356DD008ECC8E /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A382D2356DD008ECC8E /* Position.swift */; };
 		4CD9099F2D14609000821D03 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9099E2D14609000821D03 /* libraylib.a */; };
@@ -47,7 +47,7 @@
 		4C7DBAB82D554402009E2899 /* clay.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = clay.c; sourceTree = "<group>"; };
 		4C7DBABC2D55463E009E2899 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		4C7DBABD2D554C07009E2899 /* clay_umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clay_umbrella.h; sourceTree = "<group>"; };
-		4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clay_renderer_raylib.h; sourceTree = "<group>"; };
+		4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = clay_renderer_raylib.c; sourceTree = "<group>"; };
 		4C7DBAC02D55541A009E2899 /* raymath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raymath.h; sourceTree = "<group>"; };
 		4C8A3A352D234F85008ECC8E /* SnekStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnekStage.swift; sourceTree = "<group>"; };
 		4C8A3A382D2356DD008ECC8E /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		4C7DBABB2D55461F009E2899 /* clay */ = {
 			isa = PBXGroup;
 			children = (
-				4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.h */,
+				4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.c */,
 				4C7DBABD2D554C07009E2899 /* clay_umbrella.h */,
 				4C7DBABC2D55463E009E2899 /* module.modulemap */,
 				4C7DBAB82D554402009E2899 /* clay.c */,
@@ -296,7 +296,7 @@
 				4C3C8B142D1487B00044B5F6 /* Stage.swift in Sources */,
 				4CDB4B8C2D1386BF0067CA58 /* Main.swift in Sources */,
 				4C3C8B192D14B1760044B5F6 /* ClearStage.swift in Sources */,
-				4C7DBABF2D5552A6009E2899 /* clay_renderer_raylib.h in Sources */,
+				4C7DBABF2D5552A6009E2899 /* clay_renderer_raylib.c in Sources */,
 				4C3FF87C2D18DED400AB8425 /* Friend.swift in Sources */,
 				4C8A3A392D2356DD008ECC8E /* Position.swift in Sources */,
 				4C8A3A362D234F85008ECC8E /* SnekStage.swift in Sources */,

@@ -7,6 +7,6 @@
 
 #define CLAY_IMPLEMENTATION
 #include "clay.h"
-#include "clay_renderer_raylib.h"
+#include "clay_renderer_raylib.c"
 
 Clay_Arena Clay_Default_Initialize(Clay_Dimensions dimensions);
