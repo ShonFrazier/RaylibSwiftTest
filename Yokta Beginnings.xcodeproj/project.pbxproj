@@ -14,6 +14,8 @@
 		4C3C8B192D14B1760044B5F6 /* ClearStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B182D14B1760044B5F6 /* ClearStage.swift */; };
 		4C3C8B1B2D14D0150044B5F6 /* ClearDissolveStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */; };
 		4C3FF87C2D18DED400AB8425 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3FF87B2D18DED300AB8425 /* Friend.swift */; };
+		4C7DBAB92D554407009E2899 /* clay.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DBAB82D554402009E2899 /* clay.c */; };
+		4C7DBABF2D5552A6009E2899 /* clay_renderer_raylib.h in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.h */; };
 		4C8A3A362D234F85008ECC8E /* SnekStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A352D234F85008ECC8E /* SnekStage.swift */; };
 		4C8A3A392D2356DD008ECC8E /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A382D2356DD008ECC8E /* Position.swift */; };
 		4CD9099F2D14609000821D03 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9099E2D14609000821D03 /* libraylib.a */; };
@@ -41,6 +43,12 @@
 		4C3C8B182D14B1760044B5F6 /* ClearStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearStage.swift; sourceTree = "<group>"; };
 		4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearDissolveStage.swift; sourceTree = "<group>"; };
 		4C3FF87B2D18DED300AB8425 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		4C7DBAB72D554390009E2899 /* clay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clay.h; sourceTree = "<group>"; };
+		4C7DBAB82D554402009E2899 /* clay.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = clay.c; sourceTree = "<group>"; };
+		4C7DBABC2D55463E009E2899 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		4C7DBABD2D554C07009E2899 /* clay_umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clay_umbrella.h; sourceTree = "<group>"; };
+		4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clay_renderer_raylib.h; sourceTree = "<group>"; };
+		4C7DBAC02D55541A009E2899 /* raymath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raymath.h; sourceTree = "<group>"; };
 		4C8A3A352D234F85008ECC8E /* SnekStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnekStage.swift; sourceTree = "<group>"; };
 		4C8A3A382D2356DD008ECC8E /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		4CD9099A2D13C18000821D03 /* libraylib.5.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libraylib.5.5.0.dylib; path = "../raylib-5.5_macos/lib/libraylib.5.5.0.dylib"; sourceTree = "<group>"; };
@@ -108,6 +116,29 @@
 			path = Friend;
 			sourceTree = "<group>";
 		};
+		4C7DBABA2D554614009E2899 /* raylib */ = {
+			isa = PBXGroup;
+			children = (
+				4C7DBAC02D55541A009E2899 /* raymath.h */,
+				4CD9099D2D145FCE00821D03 /* raylib.h */,
+				4CD9099C2D145FB900821D03 /* module.modulemap */,
+				4C3C8B0F2D1467C80044B5F6 /* raylib.swift */,
+			);
+			path = raylib;
+			sourceTree = "<group>";
+		};
+		4C7DBABB2D55461F009E2899 /* clay */ = {
+			isa = PBXGroup;
+			children = (
+				4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.h */,
+				4C7DBABD2D554C07009E2899 /* clay_umbrella.h */,
+				4C7DBABC2D55463E009E2899 /* module.modulemap */,
+				4C7DBAB82D554402009E2899 /* clay.c */,
+				4C7DBAB72D554390009E2899 /* clay.h */,
+			);
+			path = clay;
+			sourceTree = "<group>";
+		};
 		4C8A3A372D2356BB008ECC8E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,9 +191,8 @@
 		4CDB4B702D13154F0067CA58 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				4CD9099D2D145FCE00821D03 /* raylib.h */,
-				4CD9099C2D145FB900821D03 /* module.modulemap */,
-				4C3C8B0F2D1467C80044B5F6 /* raylib.swift */,
+				4C7DBABB2D55461F009E2899 /* clay */,
+				4C7DBABA2D554614009E2899 /* raylib */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -219,6 +249,7 @@
 				TargetAttributes = {
 					4CDB4B5B2D1313F80067CA58 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
@@ -259,11 +290,13 @@
 			files = (
 				4C3C8B122D147F120044B5F6 /* Game.swift in Sources */,
 				4C3C8B102D1467C80044B5F6 /* raylib.swift in Sources */,
+				4C7DBAB92D554407009E2899 /* clay.c in Sources */,
 				4C3C8B1B2D14D0150044B5F6 /* ClearDissolveStage.swift in Sources */,
 				4C3C8B172D1489AB0044B5F6 /* LoadingStage.swift in Sources */,
 				4C3C8B142D1487B00044B5F6 /* Stage.swift in Sources */,
 				4CDB4B8C2D1386BF0067CA58 /* Main.swift in Sources */,
 				4C3C8B192D14B1760044B5F6 /* ClearStage.swift in Sources */,
+				4C7DBABF2D5552A6009E2899 /* clay_renderer_raylib.h in Sources */,
 				4C3FF87C2D18DED400AB8425 /* Friend.swift in Sources */,
 				4C8A3A392D2356DD008ECC8E /* Position.swift in Sources */,
 				4C8A3A362D234F85008ECC8E /* SnekStage.swift in Sources */,
@@ -396,18 +429,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Yokta Beginnings/Yokta_Beginnings.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Yokta Beginnings/Preview Content\"";
-				DEVELOPMENT_TEAM = 46EG8VPZ4C;
+				DEVELOPMENT_TEAM = Z5HCG2KB82;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Modules";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Modules/raylib",
+					"$(SRCROOT)/Modules/clay",
+				);
 				INFOPLIST_KEY_CFBundleDisplayName = Beginnings;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -420,12 +457,16 @@
 					"$(PROJECT_DIR)/Modules",
 				);
 				MARKETING_VERSION = 1.0;
-				MODULEMAP_FILE = "$(SRCROOT)/Libraries/raylib.modulemap";
-				OTHER_CFLAGS = "-fmodule-map-debug";
+				MODULEMAP_FILE = "$(SRCROOT)/Modules/raylib/module.modulemap $(SRCROOT)/Modules/clay/module.modulemap";
+				OTHER_CFLAGS = (
+					"-fmodule-map-file=$(SRCROOT)/Modules/Raylib/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/Modules/Clay/module.modulemap",
+				);
 				OTHER_SWIFT_FLAGS = "\"-DRAY\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.shon.Yokta-Beginnings";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -435,18 +476,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Yokta Beginnings/Yokta_Beginnings.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Yokta Beginnings/Preview Content\"";
-				DEVELOPMENT_TEAM = 46EG8VPZ4C;
+				DEVELOPMENT_TEAM = Z5HCG2KB82;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/Modules";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Modules/raylib",
+					"$(SRCROOT)/Modules/clay",
+				);
 				INFOPLIST_KEY_CFBundleDisplayName = Beginnings;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.simulation-games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -459,8 +505,11 @@
 					"$(PROJECT_DIR)/Modules",
 				);
 				MARKETING_VERSION = 1.0;
-				MODULEMAP_FILE = "$(SRCROOT)/Libraries/raylib.modulemap";
-				OTHER_CFLAGS = "-fmodule-map-debug";
+				MODULEMAP_FILE = "$(SRCROOT)/Modules/raylib/module.modulemap $(SRCROOT)/Modules/clay/module.modulemap";
+				OTHER_CFLAGS = (
+					"-fmodule-map-file=$(SRCROOT)/Modules/Raylib/module.modulemap",
+					"-fmodule-map-file=$(SRCROOT)/Modules/Clay/module.modulemap",
+				);
 				OTHER_SWIFT_FLAGS = "\"-DRAY\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.shon.Yokta-Beginnings";
 				PRODUCT_NAME = "$(TARGET_NAME)";

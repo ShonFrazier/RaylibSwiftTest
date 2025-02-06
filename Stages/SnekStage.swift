@@ -7,6 +7,7 @@
 
 import Darwin
 import Raylib
+import Clay
 
 extension Rectangle {
   var center: Position {
@@ -36,10 +37,13 @@ class SnekStage : Stage {
   
   var snek: Snek
   
-  var stepTime: Float = 0.25
+  var stepTimeDelta: Double = 0.25
+  var nextStepTime: Double
   var accumulatedFrameTime: Float = 0
 
   let fullGridSize: Size
+
+  let clayMemory: Clay_Arena
 
   init(gridSize: Size = defaultGridSize, cellSize: Size = defaultCellSize, backgroundColor: RColor = BLACK) {
     self.backgroundColor = backgroundColor
@@ -62,19 +66,27 @@ class SnekStage : Stage {
     }
 
     self.snek = Snek(body: body, direction: .random())
+    self.nextStepTime = GetTime()
+
+    let dims = Clay_Dimensions(width: Float(GetScreenWidth()), height: Float(GetScreenHeight()))
+    clayMemory = Clay_Default_Initialize(dims)
   }
   
   override func willDraw() {
+    let now = GetTime()
+
+    Clay_BeginLayout()
+    let cmds = Clay_EndLayout()
+
     BeginDrawing()
     defer { EndDrawing() }
-    
+
     ClearBackground(backgroundColor)
     
     let hMargin = (GetScreenWidth() - fullGridSize.width) / 2
     let vMargin = (GetScreenHeight() - fullGridSize.height) / 2
     
-    self.accumulatedFrameTime += GetFrameTime()
-    let timeToStep = self.accumulatedFrameTime >= stepTime
+    let timeToStep = GetTime() >= nextStepTime
 
     if timeToStep {
       if let snek = snek.move() {
@@ -84,11 +96,13 @@ class SnekStage : Stage {
           } else {
             self.die()
           }
+        } else {
+          print("headles Snek?")
         }
       } else {
         print("Error moving snek")
       }
-      self.accumulatedFrameTime = 0
+      self.nextStepTime = now + stepTimeDelta
     }
 
     self.snek.body.forEach({ cell in
@@ -96,6 +110,8 @@ class SnekStage : Stage {
       let y = cell.position.y * Float(cellSize.height) + Float(vMargin)
       DrawRectangle(Int32(x), Int32(y), cellSize.width, cellSize.height, RED)
     })
+
+    Clay_Raylib_Render(cmds, nil);
   }
   
   func die() {

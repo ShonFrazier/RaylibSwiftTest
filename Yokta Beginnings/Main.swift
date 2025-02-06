@@ -7,6 +7,7 @@
 
 import AppKit
 import Raylib
+import Clay
 
 @main
 struct MyApp {
@@ -36,7 +37,6 @@ struct MyApp {
     app.mainMenu = makeMenu()
     
     let game = Game(nil, FLAG_WINDOW_RESIZABLE)
-    
     let timer = DispatchSource.makeTimerSource()
     timer.schedule(deadline: .now(), repeating:.microseconds(8300))
     timer.setEventHandler {

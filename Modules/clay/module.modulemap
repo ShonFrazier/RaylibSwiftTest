@@ -1,0 +1,5 @@
+
+module Clay {
+  umbrella header "clay_umbrella.h"
+  export *
+}
