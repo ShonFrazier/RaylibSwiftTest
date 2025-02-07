@@ -8,3 +8,5 @@
 #include "clay.h"
 
 Clay_Arena Clay_Default_Initialize(Clay_Dimensions dimensions);
+
+#include "clay_renderer_raylib.c"

@@ -5,7 +5,7 @@
 //  Created by Shon on 2/6/25.
 //
 
-#define CLAY_IMPLEMENTATION
+#define CLAY_IMPLEMENTATION 1
 #include "clay.h"
 
 Clay_ErrorHandler NO_HANDLER = { .errorHandlerFunction = NULL, .userData = NULL };
