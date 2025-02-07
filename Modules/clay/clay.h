@@ -14,6 +14,10 @@
 #include <stdbool.h>
 #include <stddef.h>
 
+#ifdef CLAY_IMPLEMENTATION
+#pragma message("CLAY_IMPLEMENTATION is defined")
+#endif
+
 // SIMD includes on supported platforms
 #if defined(__x86_64__) || defined(_M_X64) || defined(_M_AMD64)
 #include <emmintrin.h>

@@ -111,7 +111,7 @@ class SnekStage : Stage {
       DrawRectangle(Int32(x), Int32(y), cellSize.width, cellSize.height, RED)
     })
 
-    Clay_Raylib_Render(cmds, nil);
+    //Clay_Raylib_Render(cmds, nil);
   }
   
   func die() {

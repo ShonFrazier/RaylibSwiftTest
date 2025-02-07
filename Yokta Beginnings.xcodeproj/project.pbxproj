@@ -15,9 +15,9 @@
 		4C3C8B1B2D14D0150044B5F6 /* ClearDissolveStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */; };
 		4C3FF87C2D18DED400AB8425 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3FF87B2D18DED300AB8425 /* Friend.swift */; };
 		4C7DBAB92D554407009E2899 /* clay.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DBAB82D554402009E2899 /* clay.c */; };
-		4C7DBABF2D5552A6009E2899 /* clay_renderer_raylib.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.c */; };
 		4C8A3A362D234F85008ECC8E /* SnekStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A352D234F85008ECC8E /* SnekStage.swift */; };
 		4C8A3A392D2356DD008ECC8E /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A382D2356DD008ECC8E /* Position.swift */; };
+		4CC30CBF2D558ECF00D986CE /* clay_renderer_raylib.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CC30CBE2D558ECF00D986CE /* clay_renderer_raylib.c */; };
 		4CD9099F2D14609000821D03 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9099E2D14609000821D03 /* libraylib.a */; };
 		4CDB4B642D1313FC0067CA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4B632D1313FC0067CA58 /* Assets.xcassets */; };
 		4CDB4B672D1313FC0067CA58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4B662D1313FC0067CA58 /* Preview Assets.xcassets */; };
@@ -36,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C241B1F2D555DC400CBA6C1 /* raylib_umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raylib_umbrella.h; sourceTree = "<group>"; };
 		4C3C8B0F2D1467C80044B5F6 /* raylib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raylib.swift; sourceTree = "<group>"; };
 		4C3C8B112D147F120044B5F6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4C3C8B132D1487B00044B5F6 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
@@ -47,10 +48,10 @@
 		4C7DBAB82D554402009E2899 /* clay.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = clay.c; sourceTree = "<group>"; };
 		4C7DBABC2D55463E009E2899 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		4C7DBABD2D554C07009E2899 /* clay_umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clay_umbrella.h; sourceTree = "<group>"; };
-		4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = clay_renderer_raylib.c; sourceTree = "<group>"; };
 		4C7DBAC02D55541A009E2899 /* raymath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raymath.h; sourceTree = "<group>"; };
 		4C8A3A352D234F85008ECC8E /* SnekStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnekStage.swift; sourceTree = "<group>"; };
 		4C8A3A382D2356DD008ECC8E /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		4CC30CBE2D558ECF00D986CE /* clay_renderer_raylib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = clay_renderer_raylib.c; sourceTree = "<group>"; };
 		4CD9099A2D13C18000821D03 /* libraylib.5.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libraylib.5.5.0.dylib; path = "../raylib-5.5_macos/lib/libraylib.5.5.0.dylib"; sourceTree = "<group>"; };
 		4CD9099C2D145FB900821D03 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		4CD9099D2D145FCE00821D03 /* raylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = raylib.h; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		4C7DBABA2D554614009E2899 /* raylib */ = {
 			isa = PBXGroup;
 			children = (
+				4C241B1F2D555DC400CBA6C1 /* raylib_umbrella.h */,
 				4C7DBAC02D55541A009E2899 /* raymath.h */,
 				4CD9099D2D145FCE00821D03 /* raylib.h */,
 				4CD9099C2D145FB900821D03 /* module.modulemap */,
@@ -130,7 +132,7 @@
 		4C7DBABB2D55461F009E2899 /* clay */ = {
 			isa = PBXGroup;
 			children = (
-				4C7DBABE2D5552A6009E2899 /* clay_renderer_raylib.c */,
+				4CC30CBE2D558ECF00D986CE /* clay_renderer_raylib.c */,
 				4C7DBABD2D554C07009E2899 /* clay_umbrella.h */,
 				4C7DBABC2D55463E009E2899 /* module.modulemap */,
 				4C7DBAB82D554402009E2899 /* clay.c */,
@@ -288,15 +290,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7DBAB92D554407009E2899 /* clay.c in Sources */,
 				4C3C8B122D147F120044B5F6 /* Game.swift in Sources */,
 				4C3C8B102D1467C80044B5F6 /* raylib.swift in Sources */,
-				4C7DBAB92D554407009E2899 /* clay.c in Sources */,
 				4C3C8B1B2D14D0150044B5F6 /* ClearDissolveStage.swift in Sources */,
 				4C3C8B172D1489AB0044B5F6 /* LoadingStage.swift in Sources */,
 				4C3C8B142D1487B00044B5F6 /* Stage.swift in Sources */,
 				4CDB4B8C2D1386BF0067CA58 /* Main.swift in Sources */,
 				4C3C8B192D14B1760044B5F6 /* ClearStage.swift in Sources */,
-				4C7DBABF2D5552A6009E2899 /* clay_renderer_raylib.c in Sources */,
+				4CC30CBF2D558ECF00D986CE /* clay_renderer_raylib.c in Sources */,
 				4C3FF87C2D18DED400AB8425 /* Friend.swift in Sources */,
 				4C8A3A392D2356DD008ECC8E /* Position.swift in Sources */,
 				4C8A3A362D234F85008ECC8E /* SnekStage.swift in Sources */,

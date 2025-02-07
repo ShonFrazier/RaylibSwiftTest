@@ -6,7 +6,7 @@
 //
 
 module Raylib {
-  umbrella header "raylib.h"
+  umbrella header "raylib_umbrella.h"
   export *
 }
 
