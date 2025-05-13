@@ -1,0 +1,44 @@
+[
+  {
+    "team": "Real Broccoli",
+    "colors": {
+      "primary": "Forest Green",
+      "secondary": "Cream"
+    }
+  },
+  {
+    "team": "FC Offside Trap",
+    "colors": {
+      "primary": "Neon Yellow",
+      "secondary": "Black"
+    }
+  },
+  {
+    "team": "Nutmeg County FC",
+    "colors": {
+      "primary": "Burnt Orange",
+      "secondary": "Plum"
+    }
+  },
+  {
+    "team": "Wheezington Rovers",
+    "colors": {
+      "primary": "Dusty Gray",
+      "secondary": "Maroon"
+    }
+  },
+  {
+    "team": "Banana Hill United",
+    "colors": {
+      "primary": "Bright Yellow",
+      "secondary": "Grass Stain Green"
+    }
+  },
+  {
+    "team": "Sporting Badger",
+    "colors": {
+      "primary": "Black",
+      "secondary": "Blood Red"
+    }
+  }
+]

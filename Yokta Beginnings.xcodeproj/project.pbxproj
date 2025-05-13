@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C07A3D72D84B9A0002432DC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07A3D62D84B9A0002432DC /* Model.swift */; };
+		4C07A3D92D84BBEE002432DC /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07A3D82D84BBEE002432DC /* Matrix.swift */; };
+		4C07A4012D86435A002432DC /* Slay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C07A3DB2D861EFD002432DC /* Slay.swift */; };
+		4C1629512DC985C80018CB30 /* SoccerStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1629502DC985AF0018CB30 /* SoccerStage.swift */; };
+		4C1629532DC98A560018CB30 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1629522DC98A500018CB30 /* Rectangle.swift */; };
+		4C1629562DCAE21D0018CB30 /* Lua in Frameworks */ = {isa = PBXBuildFile; productRef = 4C1629552DCAE21D0018CB30 /* Lua */; };
+		4C1629582DCAE4200018CB30 /* Footballer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1629572DCAE41A0018CB30 /* Footballer.swift */; };
+		4C16295A2DCAE8DB0018CB30 /* FootballGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1629592DCAE8D70018CB30 /* FootballGame.swift */; };
+		4C33F4112D845CAC00CCF55F /* ModelClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33F4102D845CAC00CCF55F /* ModelClassifier.swift */; };
+		4C33F4132D84691C00CCF55F /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33F4122D84691C00CCF55F /* Plane.swift */; };
+		4C33F4152D84699800CCF55F /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33F4142D84699800CCF55F /* Vector.swift */; };
 		4C3C8B102D1467C80044B5F6 /* raylib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B0F2D1467C80044B5F6 /* raylib.swift */; };
 		4C3C8B122D147F120044B5F6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B112D147F120044B5F6 /* Game.swift */; };
 		4C3C8B142D1487B00044B5F6 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B132D1487B00044B5F6 /* Stage.swift */; };
@@ -14,10 +25,9 @@
 		4C3C8B192D14B1760044B5F6 /* ClearStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B182D14B1760044B5F6 /* ClearStage.swift */; };
 		4C3C8B1B2D14D0150044B5F6 /* ClearDissolveStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */; };
 		4C3FF87C2D18DED400AB8425 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3FF87B2D18DED300AB8425 /* Friend.swift */; };
-		4C7DBAB92D554407009E2899 /* clay.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C7DBAB82D554402009E2899 /* clay.c */; };
 		4C8A3A362D234F85008ECC8E /* SnekStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A352D234F85008ECC8E /* SnekStage.swift */; };
 		4C8A3A392D2356DD008ECC8E /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A382D2356DD008ECC8E /* Position.swift */; };
-		4CC30CBF2D558ECF00D986CE /* clay_renderer_raylib.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CC30CBE2D558ECF00D986CE /* clay_renderer_raylib.c */; };
+		4CA699282D8329E100A43C73 /* ThreeDModelsStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA699272D8329E100A43C73 /* ThreeDModelsStage.swift */; };
 		4CD9099F2D14609000821D03 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9099E2D14609000821D03 /* libraylib.a */; };
 		4CDB4B642D1313FC0067CA58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4B632D1313FC0067CA58 /* Assets.xcassets */; };
 		4CDB4B672D1313FC0067CA58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDB4B662D1313FC0067CA58 /* Preview Assets.xcassets */; };
@@ -35,8 +45,31 @@
 		4CDB4B8C2D1386BF0067CA58 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDB4B8B2D1386BF0067CA58 /* Main.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4C07A3FC2D8642E1002432DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4C07A3D62D84B9A0002432DC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4C07A3D82D84BBEE002432DC /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		4C07A3DB2D861EFD002432DC /* Slay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slay.swift; sourceTree = "<group>"; };
+		4C1629502DC985AF0018CB30 /* SoccerStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerStage.swift; sourceTree = "<group>"; };
+		4C1629522DC98A500018CB30 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		4C1629572DCAE41A0018CB30 /* Footballer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footballer.swift; sourceTree = "<group>"; };
+		4C1629592DCAE8D70018CB30 /* FootballGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGame.swift; sourceTree = "<group>"; };
 		4C241B1F2D555DC400CBA6C1 /* raylib_umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raylib_umbrella.h; sourceTree = "<group>"; };
+		4C33F4102D845CAC00CCF55F /* ModelClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClassifier.swift; sourceTree = "<group>"; };
+		4C33F4122D84691C00CCF55F /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		4C33F4142D84699800CCF55F /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		4C3C8B0F2D1467C80044B5F6 /* raylib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raylib.swift; sourceTree = "<group>"; };
 		4C3C8B112D147F120044B5F6 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		4C3C8B132D1487B00044B5F6 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
@@ -44,14 +77,10 @@
 		4C3C8B182D14B1760044B5F6 /* ClearStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearStage.swift; sourceTree = "<group>"; };
 		4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearDissolveStage.swift; sourceTree = "<group>"; };
 		4C3FF87B2D18DED300AB8425 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
-		4C7DBAB72D554390009E2899 /* clay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clay.h; sourceTree = "<group>"; };
-		4C7DBAB82D554402009E2899 /* clay.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = clay.c; sourceTree = "<group>"; };
-		4C7DBABC2D55463E009E2899 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		4C7DBABD2D554C07009E2899 /* clay_umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clay_umbrella.h; sourceTree = "<group>"; };
 		4C7DBAC02D55541A009E2899 /* raymath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = raymath.h; sourceTree = "<group>"; };
 		4C8A3A352D234F85008ECC8E /* SnekStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnekStage.swift; sourceTree = "<group>"; };
 		4C8A3A382D2356DD008ECC8E /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
-		4CC30CBE2D558ECF00D986CE /* clay_renderer_raylib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = clay_renderer_raylib.c; sourceTree = "<group>"; };
+		4CA699272D8329E100A43C73 /* ThreeDModelsStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDModelsStage.swift; sourceTree = "<group>"; };
 		4CD9099A2D13C18000821D03 /* libraylib.5.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libraylib.5.5.0.dylib; path = "../raylib-5.5_macos/lib/libraylib.5.5.0.dylib"; sourceTree = "<group>"; };
 		4CD9099C2D145FB900821D03 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		4CD9099D2D145FCE00821D03 /* raylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = raylib.h; sourceTree = "<group>"; };
@@ -87,6 +116,7 @@
 				4CDB4B7F2D13170D0067CA58 /* CoreFoundation.framework in Frameworks */,
 				4CDB4B7D2D1317030067CA58 /* AppKit.framework in Frameworks */,
 				4CDB4B7B2D1316F80067CA58 /* libSystem.B.tbd in Frameworks */,
+				4C1629562DCAE21D0018CB30 /* Lua in Frameworks */,
 				4CDB4B792D1316DE0067CA58 /* CoreVideo.framework in Frameworks */,
 				4CDB4B772D1316CD0067CA58 /* IOKit.framework in Frameworks */,
 				4CDB4B752D1316C50067CA58 /* Cocoa.framework in Frameworks */,
@@ -100,11 +130,16 @@
 		4C3C8B152D1489660044B5F6 /* Stages */ = {
 			isa = PBXGroup;
 			children = (
+				4C1629592DCAE8D70018CB30 /* FootballGame.swift */,
+				4C1629572DCAE41A0018CB30 /* Footballer.swift */,
+				4C1629502DC985AF0018CB30 /* SoccerStage.swift */,
 				4C3C8B132D1487B00044B5F6 /* Stage.swift */,
 				4C3C8B162D1489AB0044B5F6 /* LoadingStage.swift */,
 				4C3C8B182D14B1760044B5F6 /* ClearStage.swift */,
 				4C3C8B1A2D14D0150044B5F6 /* ClearDissolveStage.swift */,
 				4C8A3A352D234F85008ECC8E /* SnekStage.swift */,
+				4CA699272D8329E100A43C73 /* ThreeDModelsStage.swift */,
+				4C33F4102D845CAC00CCF55F /* ModelClassifier.swift */,
 			);
 			path = Stages;
 			sourceTree = "<group>";
@@ -129,22 +164,16 @@
 			path = raylib;
 			sourceTree = "<group>";
 		};
-		4C7DBABB2D55461F009E2899 /* clay */ = {
-			isa = PBXGroup;
-			children = (
-				4CC30CBE2D558ECF00D986CE /* clay_renderer_raylib.c */,
-				4C7DBABD2D554C07009E2899 /* clay_umbrella.h */,
-				4C7DBABC2D55463E009E2899 /* module.modulemap */,
-				4C7DBAB82D554402009E2899 /* clay.c */,
-				4C7DBAB72D554390009E2899 /* clay.h */,
-			);
-			path = clay;
-			sourceTree = "<group>";
-		};
 		4C8A3A372D2356BB008ECC8E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				4C1629522DC98A500018CB30 /* Rectangle.swift */,
+				4C07A3DB2D861EFD002432DC /* Slay.swift */,
 				4C8A3A382D2356DD008ECC8E /* Position.swift */,
+				4C33F4122D84691C00CCF55F /* Plane.swift */,
+				4C33F4142D84699800CCF55F /* Vector.swift */,
+				4C07A3D62D84B9A0002432DC /* Model.swift */,
+				4C07A3D82D84BBEE002432DC /* Matrix.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -193,7 +222,6 @@
 		4CDB4B702D13154F0067CA58 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				4C7DBABB2D55461F009E2899 /* clay */,
 				4C7DBABA2D554614009E2899 /* raylib */,
 			);
 			path = Modules;
@@ -229,6 +257,7 @@
 				4CDB4B582D1313F80067CA58 /* Sources */,
 				4CDB4B592D1313F80067CA58 /* Frameworks */,
 				4CDB4B5A2D1313F80067CA58 /* Resources */,
+				4C07A3FC2D8642E1002432DC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +293,9 @@
 				Base,
 			);
 			mainGroup = 4CDB4B532D1313F80067CA58;
+			packageReferences = (
+				4C1629542DCAE21D0018CB30 /* XCRemoteSwiftPackageReference "LuaSwift" */,
+			);
 			productRefGroup = 4CDB4B5D2D1313F80067CA58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,17 +322,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C7DBAB92D554407009E2899 /* clay.c in Sources */,
 				4C3C8B122D147F120044B5F6 /* Game.swift in Sources */,
+				4C07A3D92D84BBEE002432DC /* Matrix.swift in Sources */,
 				4C3C8B102D1467C80044B5F6 /* raylib.swift in Sources */,
 				4C3C8B1B2D14D0150044B5F6 /* ClearDissolveStage.swift in Sources */,
 				4C3C8B172D1489AB0044B5F6 /* LoadingStage.swift in Sources */,
 				4C3C8B142D1487B00044B5F6 /* Stage.swift in Sources */,
 				4CDB4B8C2D1386BF0067CA58 /* Main.swift in Sources */,
+				4C16295A2DCAE8DB0018CB30 /* FootballGame.swift in Sources */,
+				4C33F4132D84691C00CCF55F /* Plane.swift in Sources */,
+				4C07A4012D86435A002432DC /* Slay.swift in Sources */,
+				4C1629512DC985C80018CB30 /* SoccerStage.swift in Sources */,
 				4C3C8B192D14B1760044B5F6 /* ClearStage.swift in Sources */,
-				4CC30CBF2D558ECF00D986CE /* clay_renderer_raylib.c in Sources */,
+				4C1629582DCAE4200018CB30 /* Footballer.swift in Sources */,
+				4C07A3D72D84B9A0002432DC /* Model.swift in Sources */,
+				4C33F4152D84699800CCF55F /* Vector.swift in Sources */,
 				4C3FF87C2D18DED400AB8425 /* Friend.swift in Sources */,
+				4C33F4112D845CAC00CCF55F /* ModelClassifier.swift in Sources */,
 				4C8A3A392D2356DD008ECC8E /* Position.swift in Sources */,
+				4CA699282D8329E100A43C73 /* ThreeDModelsStage.swift in Sources */,
+				4C1629532DC98A560018CB30 /* Rectangle.swift in Sources */,
 				4C8A3A362D234F85008ECC8E /* SnekStage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +479,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Yokta Beginnings/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5HCG2KB82;
+				DEVELOPMENT_TEAM = 46EG8VPZ4C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
@@ -486,7 +527,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Yokta Beginnings/Preview Content\"";
-				DEVELOPMENT_TEAM = Z5HCG2KB82;
+				DEVELOPMENT_TEAM = 46EG8VPZ4C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_PREVIEWS = YES;
@@ -542,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C1629542DCAE21D0018CB30 /* XCRemoteSwiftPackageReference "LuaSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tomsci/LuaSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C1629552DCAE21D0018CB30 /* Lua */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C1629542DCAE21D0018CB30 /* XCRemoteSwiftPackageReference "LuaSwift" */;
+			productName = Lua;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4CDB4B542D1313F80067CA58 /* Project object */;
 }

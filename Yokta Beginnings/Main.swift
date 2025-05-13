@@ -7,7 +7,7 @@
 
 import AppKit
 import Raylib
-import Clay
+//import Clay
 
 @main
 struct MyApp {
@@ -32,13 +32,18 @@ struct MyApp {
     return mainMenu
   }
   
+  static let fps: Double = 120;
+  
   static func main() {
     let app = NSApplication.shared
     app.mainMenu = makeMenu()
     
+    let frameTime = Int((1.0 / fps) * 1_000_000.0);
+    print("frame time in µs: \(frameTime)")
+    
     let game = Game(nil, FLAG_WINDOW_RESIZABLE)
     let timer = DispatchSource.makeTimerSource()
-    timer.schedule(deadline: .now(), repeating:.microseconds(8300))
+    timer.schedule(deadline: .now(), repeating:.microseconds(frameTime))
     timer.setEventHandler {
       DispatchQueue.main.sync {
         if game.isRunning && !WindowShouldClose() {

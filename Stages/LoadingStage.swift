@@ -76,7 +76,7 @@ public class LoadingStage : Stage {
     dismissAfterSeconds = 10
   }
   
-  public override func willPrepare() {
+  public override func prepare() {
     currentStringIndex = 0
     if self.messages.indices.contains(currentStringIndex) {
       nextString()
@@ -85,7 +85,7 @@ public class LoadingStage : Stage {
     }
   }
   
-  public override func willUpdate() {
+  public override func update() {
     let now = GetTime()
     
     if now >= currentStringEndTime {
@@ -108,7 +108,7 @@ public class LoadingStage : Stage {
     currentStringEndTime = GetTime() + (currentString!.timeout ?? DEFAULT_LOADING_STRING_TIMEOUT)
   }
   
-  public override func willDraw() {
+  public override func draw() {
     let message = messages[currentStringIndex]
     let winWidth = GetScreenWidth()
     let winHeight = GetScreenHeight()

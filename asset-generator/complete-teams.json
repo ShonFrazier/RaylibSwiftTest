@@ -1,0 +1,386 @@
+[
+  {
+    "colors" : {
+      "primary" : "Forest Green",
+      "secondary" : "Cream"
+    },
+    "players" : [
+      {
+        "name" : "Jonas Meier",
+        "number" : 1,
+        "position" : "Goalkeeper"
+      },
+      {
+        "name" : "Kai Khan",
+        "number" : 3,
+        "position" : "Left Back"
+      },
+      {
+        "name" : "Elio Schneider",
+        "number" : 4,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Silas Petrov",
+        "number" : 5,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Owen Andersson",
+        "number" : 2,
+        "position" : "Right Back"
+      },
+      {
+        "name" : "Bastian Müller",
+        "number" : 6,
+        "position" : "Defensive Midfielder"
+      },
+      {
+        "name" : "Renzo Marino",
+        "number" : 11,
+        "position" : "Left Midfielder"
+      },
+      {
+        "name" : "Rafael Jensen",
+        "number" : 7,
+        "position" : "Right Midfielder"
+      },
+      {
+        "name" : "Zane Rahman",
+        "number" : 8,
+        "position" : "Attacking Midfielder"
+      },
+      {
+        "name" : "Arlo Silva",
+        "number" : 10,
+        "position" : "Left Forward"
+      },
+      {
+        "name" : "Nico Abdi",
+        "number" : 9,
+        "position" : "Right Forward"
+      }
+    ],
+    "team" : "Real Broccoli"
+  },
+  {
+    "colors" : {
+      "primary" : "Neon Yellow",
+      "secondary" : "Black"
+    },
+    "players" : [
+      {
+        "name" : "Milo Zhou",
+        "number" : 1,
+        "position" : "Goalkeeper"
+      },
+      {
+        "name" : "Owen Lopez",
+        "number" : 3,
+        "position" : "Left Back"
+      },
+      {
+        "name" : "Sami Ishikawa",
+        "number" : 4,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Renzo Abdi",
+        "number" : 5,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Caleb Nakamura",
+        "number" : 2,
+        "position" : "Right Back"
+      },
+      {
+        "name" : "Luca Osei",
+        "number" : 6,
+        "position" : "Defensive Midfielder"
+      },
+      {
+        "name" : "Rafael Meier",
+        "number" : 11,
+        "position" : "Left Midfielder"
+      },
+      {
+        "name" : "Emil Morales",
+        "number" : 7,
+        "position" : "Right Midfielder"
+      },
+      {
+        "name" : "Mateo Müller",
+        "number" : 8,
+        "position" : "Attacking Midfielder"
+      },
+      {
+        "name" : "Leo Bakari",
+        "number" : 10,
+        "position" : "Left Forward"
+      },
+      {
+        "name" : "Cai Bello",
+        "number" : 9,
+        "position" : "Right Forward"
+      }
+    ],
+    "team" : "FC Offside Trap"
+  },
+  {
+    "colors" : {
+      "primary" : "Burnt Orange",
+      "secondary" : "Plum"
+    },
+    "players" : [
+      {
+        "name" : "Otis Zhou",
+        "number" : 1,
+        "position" : "Goalkeeper"
+      },
+      {
+        "name" : "Jasper Rahman",
+        "number" : 3,
+        "position" : "Left Back"
+      },
+      {
+        "name" : "Arlo Nguyen",
+        "number" : 4,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Tobias Moreau",
+        "number" : 5,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Marco Bautista",
+        "number" : 2,
+        "position" : "Right Back"
+      },
+      {
+        "name" : "Rowan Lopez",
+        "number" : 6,
+        "position" : "Defensive Midfielder"
+      },
+      {
+        "name" : "Sami Khan",
+        "number" : 11,
+        "position" : "Left Midfielder"
+      },
+      {
+        "name" : "Silas Petrov",
+        "number" : 7,
+        "position" : "Right Midfielder"
+      },
+      {
+        "name" : "Milo Kim",
+        "number" : 8,
+        "position" : "Attacking Midfielder"
+      },
+      {
+        "name" : "Milo Choudhury",
+        "number" : 10,
+        "position" : "Left Forward"
+      },
+      {
+        "name" : "Enzo Kaur",
+        "number" : 9,
+        "position" : "Right Forward"
+      }
+    ],
+    "team" : "Nutmeg County FC"
+  },
+  {
+    "colors" : {
+      "primary" : "Dusty Gray",
+      "secondary" : "Maroon"
+    },
+    "players" : [
+      {
+        "name" : "Zane Yamamoto",
+        "number" : 1,
+        "position" : "Goalkeeper"
+      },
+      {
+        "name" : "Otis Moreau",
+        "number" : 3,
+        "position" : "Left Back"
+      },
+      {
+        "name" : "Adrian Kaur",
+        "number" : 4,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Arlo Bello",
+        "number" : 5,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Marco Ortiz",
+        "number" : 2,
+        "position" : "Right Back"
+      },
+      {
+        "name" : "Julian Osei",
+        "number" : 6,
+        "position" : "Defensive Midfielder"
+      },
+      {
+        "name" : "Cai Rahman",
+        "number" : 11,
+        "position" : "Left Midfielder"
+      },
+      {
+        "name" : "Renzo Khan",
+        "number" : 7,
+        "position" : "Right Midfielder"
+      },
+      {
+        "name" : "Mateo Zhou",
+        "number" : 8,
+        "position" : "Attacking Midfielder"
+      },
+      {
+        "name" : "Felix Müller",
+        "number" : 10,
+        "position" : "Left Forward"
+      },
+      {
+        "name" : "Rory Abdi",
+        "number" : 9,
+        "position" : "Right Forward"
+      }
+    ],
+    "team" : "Wheezington Rovers"
+  },
+  {
+    "colors" : {
+      "primary" : "Bright Yellow",
+      "secondary" : "Grass Stain Green"
+    },
+    "players" : [
+      {
+        "name" : "Emil Tanaka",
+        "number" : 1,
+        "position" : "Goalkeeper"
+      },
+      {
+        "name" : "Elio Choudhury",
+        "number" : 3,
+        "position" : "Left Back"
+      },
+      {
+        "name" : "Emil Aziz",
+        "number" : 4,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Jonas Huang",
+        "number" : 5,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Omar Khan",
+        "number" : 2,
+        "position" : "Right Back"
+      },
+      {
+        "name" : "Caleb Schneider",
+        "number" : 6,
+        "position" : "Defensive Midfielder"
+      },
+      {
+        "name" : "Elias Abdi",
+        "number" : 11,
+        "position" : "Left Midfielder"
+      },
+      {
+        "name" : "Milo Amini",
+        "number" : 7,
+        "position" : "Right Midfielder"
+      },
+      {
+        "name" : "Tariq Petrov",
+        "number" : 8,
+        "position" : "Attacking Midfielder"
+      },
+      {
+        "name" : "Felix Garcia",
+        "number" : 10,
+        "position" : "Left Forward"
+      },
+      {
+        "name" : "Cai Lopez",
+        "number" : 9,
+        "position" : "Right Forward"
+      }
+    ],
+    "team" : "Banana Hill United"
+  },
+  {
+    "colors" : {
+      "primary" : "Black",
+      "secondary" : "Blood Red"
+    },
+    "players" : [
+      {
+        "name" : "Arlo Cruz",
+        "number" : 1,
+        "position" : "Goalkeeper"
+      },
+      {
+        "name" : "Rowan Choudhury",
+        "number" : 3,
+        "position" : "Left Back"
+      },
+      {
+        "name" : "Arlo Santos",
+        "number" : 4,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Tobias Abdi",
+        "number" : 5,
+        "position" : "Center Back"
+      },
+      {
+        "name" : "Jasper Nguyen",
+        "number" : 2,
+        "position" : "Right Back"
+      },
+      {
+        "name" : "Ibrahim Müller",
+        "number" : 6,
+        "position" : "Defensive Midfielder"
+      },
+      {
+        "name" : "Owen Rahman",
+        "number" : 11,
+        "position" : "Left Midfielder"
+      },
+      {
+        "name" : "Arlo Amini",
+        "number" : 7,
+        "position" : "Right Midfielder"
+      },
+      {
+        "name" : "Omar Yamamoto",
+        "number" : 8,
+        "position" : "Attacking Midfielder"
+      },
+      {
+        "name" : "Julian Schneider",
+        "number" : 10,
+        "position" : "Left Forward"
+      },
+      {
+        "name" : "Milo Rossi",
+        "number" : 9,
+        "position" : "Right Forward"
+      }
+    ],
+    "team" : "Sporting Badger"
+  }
+]

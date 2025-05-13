@@ -14,7 +14,7 @@ class ClearStage : Stage {
     clearColor = color
   }
   
-  override func willDraw() {
+  override func draw() {
     BeginDrawing()
     defer { EndDrawing() }
     

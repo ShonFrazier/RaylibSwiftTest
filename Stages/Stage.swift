@@ -12,14 +12,9 @@ public protocol StageInterface {
   var isRunning: Bool { get }
   var dismissAfterSeconds: Double? {get set}
   
-  func willPrepare()
-  func didPrepare()
-  
-  func willUpdate()
-  func didUpdate()
-  
-  func willDraw()
-  func didDraw()
+  func prepare()
+  func update()
+  func draw()
 }
 
 public class Stage : StageInterface {
@@ -35,37 +30,24 @@ public class Stage : StageInterface {
     endTime = 0
   }
   
-  public func willPrepare() {}
-  public final func prepare() {
-    willPrepare()
+  public func prepare() {
     if let dismissAfterSeconds = dismissAfterSeconds {
       startTime = GetTime()
       let seconds = dismissAfterSeconds
       endTime = startTime + seconds
     }
-    didPrepare()
   }
-  public func didPrepare() {}
   
-  public func willUpdate() {}
-  public final func update() {
-    willUpdate()
+  public func update() {
     if dismissAfterSeconds != nil {
-      let now = GetTime()
-      if now > endTime {
+      // If now is after endTime, stop
+      if GetTime() > endTime {
         stop()
       }
     }
-    didUpdate()
   }
-  public func didUpdate() {}
   
-  public func willDraw() {}
-  public final func draw() {
-    willDraw()
-    didDraw()
-  }
-  public func didDraw() {}
+  public func draw() {}
   
   public func stop() {
     isRunning = false

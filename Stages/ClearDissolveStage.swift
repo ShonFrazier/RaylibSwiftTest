@@ -22,12 +22,12 @@ class ClearDissolveStage: Stage {
     animationLength = length
   }
   
-  public override func willPrepare() {
+  public override func prepare() {
     startTime = GetTime()
     endTime = startTime + animationLength
   }
   
-  public override func willUpdate() {
+  public override func update() {
     let now = GetTime()
     if now > endTime {
       currentColor = endColor
@@ -39,7 +39,7 @@ class ClearDissolveStage: Stage {
     currentColor = startColor.interpolate(to: endColor, t: t)
   }
     
-  public override func willDraw() {
+  public override func draw() {
     BeginDrawing()
     defer { EndDrawing() }
     
@@ -47,7 +47,7 @@ class ClearDissolveStage: Stage {
   }
 }
 
-extension RColor : CustomStringConvertible {
+extension RColor : @retroactive CustomStringConvertible {
   public var description: String {
     return "Color<r: \(self.r)  g: \(self.g)  b: \(self.b)  a: \(self.a)\n>"
   }

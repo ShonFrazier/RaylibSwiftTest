@@ -7,14 +7,14 @@
 
 import Darwin
 import Raylib
-import Clay
+//import Clay
 
 extension Rectangle {
-  var center: Position {
-    Position(x: self.x + self.width / 2.0, y: self.y + self.height / 2.0)
+  var center: Position2 {
+    Position2(x: self.x + self.width / 2.0, y: self.y + self.height / 2.0)
   }
   
-  func contains(_ p: Position) -> Bool {
+  func contains(_ p: Position2) -> Bool {
     return
       p.x >= self.x &&
       p.y >= self.y &&
@@ -43,7 +43,7 @@ class SnekStage : Stage {
 
   let fullGridSize: Size
 
-  let clayMemory: Clay_Arena
+//  let clayMemory: Clay_Arena
 
   init(gridSize: Size = defaultGridSize, cellSize: Size = defaultCellSize, backgroundColor: RColor = BLACK) {
     self.backgroundColor = backgroundColor
@@ -51,40 +51,40 @@ class SnekStage : Stage {
     self.gridSize = gridSize
 
     self.fullGridSize = Size(
-      width: gridSize.width * cellSize.width,
-      height: gridSize.height * cellSize.width
+      width: gridSize.width() * cellSize.width(),
+      height: gridSize.height() * cellSize.width()
     )
 
     // Get the center of the entire grid
-    self.gridRectangle = Rectangle(x: 0, y: 0, width: Float(gridSize.width), height: Float(gridSize.height))
+    self.gridRectangle = Rectangle(x: 0, y: 0, width: gridSize.width(), height: gridSize.height())
     let center = self.gridRectangle.center
 
     let range: Range<Int> = 0..<Int(DEFAULT_SNEK_LENGTH)
     let body = range.map { i in
       let f = Float(i)
-      return SnekCell(count: DEFAULT_SNEK_LENGTH, position: center + (f * Position.east))
+      return SnekCell(count: DEFAULT_SNEK_LENGTH, position: center + (f * Position2.east))
     }
 
     self.snek = Snek(body: body, direction: .random())
     self.nextStepTime = GetTime()
 
-    let dims = Clay_Dimensions(width: Float(GetScreenWidth()), height: Float(GetScreenHeight()))
-    clayMemory = Clay_Default_Initialize(dims)
+//    let dims = Clay_Dimensions(width: Float(GetScreenWidth()), height: Float(GetScreenHeight()))
+//    clayMemory = Clay_Default_Initialize(dims)
   }
   
-  override func willDraw() {
+  override func draw() {
     let now = GetTime()
 
-    Clay_BeginLayout()
-    let cmds = Clay_EndLayout()
+//    Clay_BeginLayout()
+//    let cmds = Clay_EndLayout()
 
     BeginDrawing()
     defer { EndDrawing() }
 
     ClearBackground(backgroundColor)
     
-    let hMargin = (GetScreenWidth() - fullGridSize.width) / 2
-    let vMargin = (GetScreenHeight() - fullGridSize.height) / 2
+    let hMargin = (GetScreenWidth() - fullGridSize.width()) / 2
+    let vMargin = (GetScreenHeight() - fullGridSize.height()) / 2
     
     let timeToStep = GetTime() >= nextStepTime
 
@@ -106,12 +106,12 @@ class SnekStage : Stage {
     }
 
     self.snek.body.forEach({ cell in
-      let x = cell.position.x * Float(cellSize.width) + Float(hMargin)
-      let y = cell.position.y * Float(cellSize.height) + Float(vMargin)
-      DrawRectangle(Int32(x), Int32(y), cellSize.width, cellSize.height, RED)
+      let x = cell.position.x * cellSize.width() + Float(hMargin)
+      let y = cell.position.y * cellSize.height() + Float(vMargin)
+      DrawRectangle(Int32(x), Int32(y), cellSize.width(), cellSize.height(), RED)
     })
 
-    Clay_Raylib_Render(cmds, nil);
+    //Clay_Raylib_Render(cmds, nil);
   }
   
   func die() {
@@ -125,7 +125,7 @@ enum Direction : RawRepresentable, CaseIterable {
   case west
   case south
 
-  var rawValue: Position {
+  var rawValue: Position2 {
     switch self {
     case .east:
       return .east
@@ -138,7 +138,7 @@ enum Direction : RawRepresentable, CaseIterable {
     }
   }
 
-  init?(rawValue: Position) {
+  init?(rawValue: Position2) {
     if rawValue == .east {
       self = .east
     }
@@ -175,7 +175,7 @@ extension UInt {
 
 struct SnekCell {
   var count: UInt
-  var position: Position
+  var position: Position2
 
   var decremented: SnekCell {
     return SnekCell(count: count.decremented(), position: position)
@@ -198,7 +198,7 @@ struct Snek {
   let direction: Direction
   let score: UInt
   
-  var head: Position? {
+  var head: Position2? {
     body.first?.position
   }
 
