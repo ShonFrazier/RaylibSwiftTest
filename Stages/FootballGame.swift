@@ -21,6 +21,19 @@ enum TeamSide : String, CaseIterable {
   case away = "stripe"
 }
 
+let playerPositions: [String: Position2] = [
+    "Goalkeeper": Position2(-50, 0),
+    "Left Back": Position2(-40, -18),
+    "Left Center Back": Position2(-45, -6),
+    "Right Center Back": Position2(-45, 6),
+    "Right Back": Position2(-40, 18),
+    "Defensive Midfielder": Position2(-25, 0),
+    "Left Central Midfielder": Position2(-20, -12),
+    "Right Central Midfielder": Position2(-20, 12),
+    "Left Winger": Position2(0, -20),
+    "Center Forward": Position2(5, 0),
+    "Right Winger": Position2(0, 20)
+]
 class FootballGame {
   var clubs: [FootballTeam] = [] // all teams
   var teams: [TeamSide:FootballTeam] = [:] // current competition
@@ -52,6 +65,9 @@ class FootballGame {
             let number = player["number"] as? Int
             
             let newPlayer = Footballer(team: team, name: name ?? "Anonymous", role: role ?? "Unknown", number: number ?? 0)
+            if let role = role {
+              newPlayer.position = playerPositions[role] ?? .zero
+            }
             team.players.append(newPlayer)
           }
           allTeams.append(team)
@@ -99,12 +115,11 @@ class FootballGame {
     }
   }
   
+  let originalPixelsPerMeter: Float = 7.63
   var lastDestRec: Rectangle = .zero
   func draw() {
-    let screenRec = Rectangle(origin: .zero, size: Size(width: GetScreenWidth(), height: GetScreenHeight()))
-    let origin: Position2 = (screenRec.size / 2).vec2
-    
     guard let pitchTexture = self.pitchTexture else { return }
+    let screenRec = Rectangle(origin: .zero, size: Size(width: GetScreenWidth(), height: GetScreenHeight()))
     
     BeginDrawing()
     defer { EndDrawing() }
@@ -115,6 +130,7 @@ class FootballGame {
     // Pitch
     let imageRec = Rectangle(for: pitchTexture)
     let (destRec, scale) = imageRec.scaled(within: screenRec)
+    let ppm = originalPixelsPerMeter * scale
     
     if lastDestRec != destRec {
       print("\(lastDestRec) -> \(destRec)")
@@ -125,11 +141,16 @@ class FootballGame {
     
     for (side, team) in self.teams {
       if let teamSprite = team.sprites[side] {
-        let playerRec = Rectangle(for: teamSprite) * scale
+        let mirror = side == .away ? Position2(-1,1) : Position2(1,1)
+        let playerPpm = Float(teamSprite.width)
+        let renderPlayerScale = ppm / playerPpm
+        
+        let spriteRec = Rectangle(for: teamSprite)
+        let playerRec = spriteRec * renderPlayerScale
         for footballer in team.players {
           // draw player
-          let dest = Rectangle(center: footballer.position + screenRec.center, size: playerRec.size.vec2)
-          DrawTexturePro(teamSprite, playerRec, dest, playerRec.center, 0, WHITE)
+          let dest = Rectangle(center: (footballer.position * mirror) + screenRec.center, size: playerRec.size.vec2)
+          DrawTexturePro(teamSprite, spriteRec, dest, playerRec.center, 0, WHITE)
         }
       }
     }

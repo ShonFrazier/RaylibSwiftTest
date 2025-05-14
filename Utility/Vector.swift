@@ -165,6 +165,10 @@ extension Vector2 {
     lhs.y -= rhs.y
   }
   
+  static func *(lhs: Self, rhs: Self) -> Self {
+    Position2(lhs.x * rhs.x, lhs.y * rhs.y)
+  }
+  
   static func *(vec: Self, scalar: Float) -> Self {
     .init(vec.x * scalar, vec.y * scalar)
   }

@@ -93,8 +93,16 @@ extension Rectangle {
 extension Size {
   static let zero: Self = .init(width: 0, height: 0)
   
+  init(of texture: Texture2D) {
+    self.init(width: texture.width, height: texture.height)
+  }
+  
   static func *(size: Self, scalar: Int32) -> Self {
     .init(width: size.width() * scalar, height: size.height() * scalar)
+  }
+  
+  static func *(size: Self, scalar: Float) -> Self {
+    .init(width: size.width() * Int32(scalar), height: size.height() * Int32(scalar))
   }
   
   static func /(size: Self, divisor: Int32) -> Self {
